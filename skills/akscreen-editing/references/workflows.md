@@ -15,6 +15,27 @@ choosing a family. For generated movement, use a small bounded duration; repeate
 layers and sampled animation can increase project size. Render a preview after
 the meaningful composition changes.
 
+## Tracking, stabilization and audio animation
+
+Discover `tracking.analyze`, `tracking.inspect`, `tracking.apply`, `audio.reactive`
+and `audio.spectrum`. Resolve source and target clip IDs first. Tracking regions
+use source-image pixels, not preview-window coordinates. Choose a textured
+object and start before the last frame. Tracking may stop at cuts or occlusion;
+report that failure instead of applying an invented trajectory.
+
+Analyses are asynchronous jobs. Keep the returned job ID, poll `jobs.list`, and
+avoid editing the sequence while analysis runs: the editor rejects stale results.
+Use `jobs.cancel` for cancellation. Inspect generated keyframes and preview the
+start, middle and end after successful completion. Bands become editable vector
+layers; reactive animation uses an audio-track clip or the timeline mix.
+
+Discover `physics.emitter`, `camera.target` and `motion.blur` for particles,
+targeted cameras and temporal sampling. Match emitter coordinates to the sequence
+dimensions. Particles are deterministic 2D physics; they do not simulate 3D rigid
+bodies. Motion blur increases render cost, so use bounded samples and a short
+preview before an export. Character transforms are graphic text-layer properties;
+discover current property IDs before setting ranges or animation progress.
+
 ## Captions
 
 Discover `captions.*`, inspect the target track and confirm caption timing.
