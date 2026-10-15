@@ -3,6 +3,12 @@
 Instrucciones para editar proyectos de **AK Screen** con un agente compatible
 con skills y [AK Screen MCP](https://github.com/Edgajuman/AKScreen-MCP).
 
+**Compatible con AK Screen 3.0 y versiones posteriores.**
+
+[**Descargar AK Screen**](https://github.com/Edgajuman/AKScreen-Downloads/releases)
+· [Repositorio de descargas](https://github.com/Edgajuman/AKScreen-Downloads)
+· [Configurar el MCP](https://github.com/Edgajuman/AKScreen-MCP)
+
 El MCP aporta las herramientas reales. La skill guía al agente para descubrir
 comandos, utilizar los IDs del proyecto abierto, conservar el trabajo, revisar
 el resultado y exportar sin repetir operaciones por error.
@@ -18,8 +24,8 @@ el resultado y exportar sin repetir operaciones por error.
 Configura también el servidor MCP siguiendo su README. Una skill por sí sola
 no ejecuta herramientas ni proporciona acceso al editor.
 
-**Requiere el editor con el nuevo puente autenticado.** El instalador 2.4.0 del
-12 de octubre de 2026 todavía no lo incluye. No cambia ni instala esa aplicación.
+Instala AK Screen 3.0 o posterior y configura el MCP para utilizar el ejecutable
+de esa versión.
 
 ## Ejemplos
 
@@ -29,7 +35,7 @@ no ejecuta herramientas ni proporciona acceso al editor.
 
 > Crea un gráfico animado de ventas, conserva mis clips y exporta un MP4.
 
-Los ejemplos dependen de los comandos disponibles en la compilación conectada;
+Los ejemplos utilizan los comandos disponibles en la versión conectada;
 el agente debe consultarlos, no inventarlos. Las instrucciones y referencias
 están en [SKILL.md](skills/akscreen-editing/SKILL.md).
 

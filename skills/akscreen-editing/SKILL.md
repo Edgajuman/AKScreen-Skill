@@ -1,6 +1,6 @@
 ---
 name: akscreen-editing
-description: Edit video projects, motion graphics, text, captions, effects, audio and exports in a running AK Screen editor through its MCP tools. Use for AK Screen editing requests when the AK Screen MCP server is available.
+description: Edit video projects, motion graphics, text, captions, effects, audio and exports in AK Screen 3.0 or later through its MCP tools. Use for AK Screen editing requests when the AK Screen MCP server is available.
 ---
 
 # AK Screen Editing
@@ -44,7 +44,8 @@ capturing every intermediate action. Review final timing, text, crop and audio
 settings before export. Export once, poll `jobs.list`, and report its actual
 completion or failure instead of claiming that a started export finished.
 
+Requires AK Screen 3.0 or later. Obtain the editor from
+[official downloads](https://github.com/Edgajuman/AKScreen-Downloads/releases).
 When a command is unavailable or the bridge is disabled, explain the missing
-capability. The original 2.4.0 installer predates authenticated agent control;
-this skill cannot enable it without an editor update. See
+capability and use discovered alternatives when appropriate. See
 [workflows](references/workflows.md) for editing examples and recovery details.
